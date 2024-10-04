@@ -29,10 +29,16 @@ const Home = () => {
   return (
     <>
       <NavBar scrollTo={scrollTo} />
-      <div className="flex flex-col justify-center items-center min-h-screen pt-24">
-        <ReactTyped typeSpeed={40} strings={["STURAN NETWORK"]} backSpeed={50} loop className="text-7xl font-bold text-color-primary mb-5"/>
-        <h1 className="text-4xl font-bold mb-5">To Everyone</h1>
-        <p>A Decentralized crowdfunding using blockchain Technology</p>
+      <div className="flex flex-col justify-center items-center min-h-screen pt-24 px-4 text-center">
+        <ReactTyped 
+          typeSpeed={40} 
+          strings={["STURAN NETWORK"]} 
+          backSpeed={50} 
+          loop 
+          className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold text-color-primary mb-5"
+        />
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-5">To Everyone</h1>
+        <p className="text-xs sm:text-sm md:text-base lg:text-lg">A Decentralized crowdfunding using blockchain Technology</p>
       </div>
       <div ref={foundationRef}>
         <Foundation />

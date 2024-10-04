@@ -3,23 +3,32 @@ import Image from "next/image"
 
 const AddWallet = () => {
     return (
-        <div className="h-screen">
-            <div className="ml-16 mt-6">
-                <h1 className="text-7xl font-bold">Getting Started</h1>
-                <h1 className="text-7xl font-semibold mt-4">With <span className="text-color-primary">Sturan Network</span></h1>
-                <div className="flex justify-end mr-16 mt-4">
-                    <button className="px-6 py-3 bg-color-primary rounded-full text-color-white font-bold">Choose Wallet</button>
+        <div className="min-h-screen p-4 sm:p-6 md:p-8">
+            <div className="mb-8 md:mb-12">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2 sm:mb-4">Getting Started</h1>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">
+                    With <span className="text-color-primary">Sturan Network</span>
+                </h1>
+                <div className="flex justify-center sm:justify-end mt-6 sm:mt-8">
+                    <button className="px-4 sm:px-6 py-2 sm:py-3 bg-color-primary rounded-full text-color-white font-bold text-sm sm:text-base">
+                        Choose Wallet
+                    </button>
                 </div>
             </div>
-            <div className="sm:h-64 xl:h-80 2xl:h-96 mr-20 ml-20 mt-8">
-                    <Carousel>
-                        <Image width="300" height="100" src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-                        <Image width="300" height="100" src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-                        <Image width="300" height="100" src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-                        <Image width="300" height="100" src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-                        <Image width="300" height="100" src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
-                    </Carousel>
-                </div>
+            <div className="h-64 sm:h-80 md:h-96 mx-4 sm:mx-8 md:mx-12 lg:mx-20">
+                <Carousel>
+                    {[1, 2, 3, 4, 5].map((num) => (
+                        <Image 
+                            key={num}
+                            width={300}
+                            height={100}
+                            src={`https://flowbite.com/docs/images/carousel/carousel-${num}.svg`}
+                            alt={`Carousel image ${num}`}
+                            className="w-full h-full object-cover"
+                        />
+                    ))}
+                </Carousel>
+            </div>
         </div>
     )
 }
