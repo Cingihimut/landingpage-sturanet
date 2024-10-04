@@ -11,7 +11,7 @@ const NavBar = ({ scrollTo }) => {
                     <h1 className="ml-3 text-xl font-semibold">Sturan Network</h1>
                 </Link>
                 <div className="flex gap-4 font-semibold">
-                    <Link href="/docs">Docs</Link>
+                    <Link href="/docs/getting-started">Docs</Link>
                     <button onClick={() => scrollTo('foundation')}>Foundation</button>
                     <button onClick={() => scrollTo('useCase')}>Use Case</button>
                 </div>

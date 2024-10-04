@@ -1,5 +1,5 @@
 export default {
-  docs: "Getting started",
-  xtr: "Xtr",
-  usx: "Usx",
+  "getting-started": "Getting Started",
+  "core-concepts" : "Core Concepts",
+  "problem-to-be-solved" : "Proble to be Solved"
 }
