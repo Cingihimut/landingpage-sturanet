@@ -5,7 +5,7 @@ export async function GET(request) {
   try {
     const response = await axios.get('https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest', {
       params: {
-        limit: 10
+        limit: 5
       },
       headers: {
         'X-CMC_PRO_API_KEY': process.env.NEXT_PUBLIC_CMC_API_KEY,

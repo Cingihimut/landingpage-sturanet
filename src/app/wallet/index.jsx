@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AddWallet = () => {
   return (
-    <div className="p-4 sm:p-6 md:p-8 lg:p-12 min-h-screen">
+    <div className="p-4 sm:p-6 md:p-8 lg:p-12 h-screen">
       <div className="text-center mb-8 md:mb-12">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-4">Getting Started</h1>
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
@@ -15,7 +15,7 @@ const AddWallet = () => {
           </button>
         </div>
       </div>
-      <div className="h-64 sm:h-80 md:h-96 lg:h-[500px] mx-auto">
+      <div className="h-64 sm:h-80 md:h-96 lg:h-[100px] mx-auto">
         <Carousel>
           {[1, 2, 3, 4, 5].map((num) => (
             <Image

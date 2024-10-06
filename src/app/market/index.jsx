@@ -25,42 +25,29 @@ const Market = () => {
   if (error) return <div>Failed to load: {error}</div>;
   if (!data) return <div>Loading...</div>;
 
-  // Split data into two arrays: first 5 for left column, next 5 for right column
   const leftCoins = data.slice(0, 5);
-  const rightCoins = data.slice(5, 10);
 
   return (
-    <div className="p-4 md:p-8 lg:p-16 min-h-screen">
+    <div className="p-4 mt-10 md:p-8 lg:p-16 h-screen">
       <h1 className="text-2xl md:text-4xl font-bold mb-6 text-center">Top 10 Coinmarketcap</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-8">
-        {/* Left column */}
-        <div>
+      <div className="flex sm:flex gap-4 lg:gap-8">
+        <div className='w-full'>
+          <div className='flex justify-between mb-6'>
+            <p className='text-xl font-bold'>Name</p>
+            <p className='text-xl font-bold mr-8'>Price</p>
+          </div>
           {leftCoins.map((coin) => (
-            <Link 
-              key={coin.id} 
-              href={`https://coinmarketcap.com/currencies/${coin.slug}/`} 
-              target="_blank" 
+            <Link
+              key={coin.id}
+              href={`https://coinmarketcap.com/currencies/${coin.slug}/`}
+              target="_blank"
               rel="noopener noreferrer"
               className="block mb-4 p-4 border rounded-lg hover:bg-gray-100"
             >
-              <h2 className="text-lg md:text-xl font-semibold">{coin.name} ({coin.symbol})</h2>
-              <p>Price: ${coin.quote.USD.price.toFixed(2)}</p>
-            </Link>
-          ))}
-        </div>
-
-        {/* Right column */}
-        <div>
-          {rightCoins.map((coin) => (
-            <Link 
-              key={coin.id} 
-              href={`https://coinmarketcap.com/currencies/${coin.slug}/`} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="block mb-4 p-4 border rounded-lg hover:bg-gray-100"
-            >
-              <h2 className="text-lg md:text-xl font-semibold">{coin.name} ({coin.symbol})</h2>
-              <p>Price: ${coin.quote.USD.price.toFixed(2)}</p>
+              <div className='flex justify-between'>
+                <h2 className="text-lg md:text-xl font-semibold">{coin.name} ({coin.symbol})</h2>
+                <p>${coin.quote.USD.price.toFixed(2)}</p>
+              </div>
             </Link>
           ))}
         </div>
