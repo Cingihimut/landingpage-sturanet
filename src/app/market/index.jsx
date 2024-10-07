@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
@@ -28,7 +26,7 @@ const Market = () => {
   const leftCoins = data.slice(0, 5);
 
   return (
-    <div className="p-4 mt-10 md:p-8 lg:p-16 h-screen">
+    <div className="p-4 mt-6 sm:mt-8 md:mt-10 lg:mt-12 md:p-8 lg:p-16">
       <h1 className="text-2xl md:text-4xl font-bold mb-6 text-center">Top 10 Coinmarketcap</h1>
       <div className="flex sm:flex gap-4 lg:gap-8">
         <div className='w-full'>

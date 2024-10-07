@@ -28,7 +28,7 @@ const NavBar = ({ scrollTo }) => {
         <div className="hidden md:flex gap-4 font-semibold">
           <Link href="/docs/getting-started">Docs</Link>
           <button onClick={() => scrollTo("foundation")}>Foundation</button>
-          <button onClick={() => scrollTo("useCase")}>Use Case</button>
+          <Link href="/infrastructure/infrastructure">Use Case</Link>
         </div>
         <div className="hidden md:block">
           <Link

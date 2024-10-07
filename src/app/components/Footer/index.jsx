@@ -16,11 +16,10 @@ export function Footers() {
             </FooterLinkGroup>
           </div>
           <div>
-            <FooterTitle title="help center" className="text-color-neutral" />
+            <FooterTitle title="community" className="text-color-neutral" />
             <FooterLinkGroup col className="text-color-neutral" >
               <FooterLink href="/discord">Discord Server</FooterLink>
               <FooterLink href="/x">X</FooterLink>
-              <FooterLink href="/facebook">Facebook</FooterLink>
               <FooterLink href="/telegram">Telegram</FooterLink>
             </FooterLinkGroup>
           </div>

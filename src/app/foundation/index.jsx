@@ -40,7 +40,7 @@ const Foundation = () => {
         </div>
       </div>
       <div className="flex justify-center items-center mt-6 sm:mt-8 md:mt-10">
-        <Link href="/about" className="py-2 px-6 sm:py-3 sm:px-8 bg-color-neutral text-color-white rounded-lg hover:bg-opacity-85 duration-300 text-sm sm:text-base">
+        <Link href="/docs/core-concepts" className="py-2 px-6 sm:py-3 sm:px-8 bg-color-neutral text-color-white rounded-lg hover:bg-opacity-85 duration-300 text-sm sm:text-base">
           Read More
         </Link>
       </div>
