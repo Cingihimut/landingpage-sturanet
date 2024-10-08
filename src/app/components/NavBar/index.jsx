@@ -45,7 +45,7 @@ const NavBar = ({ scrollTo }) => {
         <div className="md:hidden mt-4 flex flex-col items-start gap-2">
           <Link href="/docs/getting-started" onClick={toggleMenu} className="w-full">Docs</Link>
           <button onClick={() => { scrollTo("foundation"); toggleMenu(); }} className="text-left w-full">Foundation</button>
-          <button onClick={() => { scrollTo("useCase"); toggleMenu(); }} className="text-left w-full">Use Case</button>
+          <Link href="/infrastructure/infrastructure">Use Case</Link>
           <div className="w-full text-center mt-2">
             <Link
               href="/"
