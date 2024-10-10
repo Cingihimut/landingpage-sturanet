@@ -1,22 +1,22 @@
 # Transaction
 
-Transaction Flow in blockchain systems refers to how transactions are processed from start to finish, including the steps of verification, recording, and settlement of transactions. In the context of crowdfunding platforms that use blockchain technology such as Sturan Network, this transaction flow plays an important role in ensuring transparency, security, and efficiency.
-
-The following is an explanation of transaction flow in general in blockchain-based systems, as well as how it is implemented in Sturan Network:
+The transaction flow in Sturan Network ensures transparency and security from the initiation to the final settlement of funds. Below is a step-by-step guide to understand how our system processes each transaction.
 
 ## Transaction Initiation
 
-The transaction flow begins when a user or contributor decides to participate in a crowdfunding campaign. In traditional platforms, contributors usually enter credit card information or other payment details, but in blockchain-based systems, contributors only need to enter their digital wallet address.
+Transactions begin when users interact with the platform, whether by contributing to a campaign or initiating a wallet-to-wallet transfer.
 
     - ### Wallet
-        Contributors use digital wallets that contain cryptocurrencies such as Ether (to pay fee). Each of these digital wallets has a unique address that is used to identify the user in blockchain transactions.
+        A secure wallet is essential for interacting with Sturan Network. Users can store their tokens and initiate transactions directly from their wallet.
 
     - ### Transaction Submission
-        Contributors specify the amount of contribution to be made in the crowdfunding campaign and then send it to the smart contract address.
+        Once initiated, transactions are submitted to the blockchain for validation. Our smart contracts ensure the submission process is transparent and tamper-proof.
 
 ## Transaction Settlement and Fund Distribution
-    - ### Funds Transfer
-        At this stage, the smart contract automatically sends funds from the campaign contract address to the recipient's (campaign organizer) wallet address. All parties involved can verify this process by checking the hash and campaign status on the blockchain.
+After a transaction is validated, the smart contract distributes the funds as outlined in the campaign's terms. The transparency of the process ensures all stakeholders can monitor the flow of funds.
 
+    - ### Funds Transfer
+        Funds are securely transferred between wallets using blockchain. Every transfer is logged and can be audited, enhancing the trust in the platform.
+    
     - ### Final Transaction
-        Once the funds are transferred, the transaction is considered final and completed. Blockchain ensures that all transactions that have been verified and recorded in blocks cannot be changed or deleted.
+        Upon completion of all necessary validations and conditions, the final transaction is recorded on the blockchain, making it an immutable part of the system’s history.
