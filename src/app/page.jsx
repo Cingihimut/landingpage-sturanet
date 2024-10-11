@@ -6,6 +6,7 @@ import AddWallet from './wallet';
 import Legal from './Legal';
 import Foundation from './foundation';
 import Market from './market';
+import Benefits from './choose';
 
 const Home = () => {
   const foundationRef = useRef(null);
@@ -37,6 +38,7 @@ const Home = () => {
       <div ref={foundationRef}>
         <Foundation />
       </div>
+      <Benefits />
       <Market />
       <AddWallet />
       <Legal />
