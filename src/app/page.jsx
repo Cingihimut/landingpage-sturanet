@@ -6,7 +6,7 @@ import AddWallet from './wallet';
 import Legal from './Legal';
 import Foundation from './foundation';
 import Market from './market';
-import Benefits from './choose';
+import Benefits from './benefits';
 
 const Home = () => {
   const foundationRef = useRef(null);

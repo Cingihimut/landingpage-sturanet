@@ -1,5 +1,6 @@
 export default {
-    "transaction": "Transaction Flow",
-    "xtr" : "Xtr Token",
-    "usx" : "Usx Token"
-  }
+  "xtr": "Xtr Token",
+  "voting": "Voting",
+  "initiativeProposal": " Initiative Proposal",
+  "volunteer" : "volunteer"
+};

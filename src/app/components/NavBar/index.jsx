@@ -32,7 +32,7 @@ const NavBar = ({ scrollTo }) => {
         </div>
         <div className="hidden md:block">
           <Link
-            href="/dapps"
+            href="http://sturanet.vercel.app/"
             target="_blank"
             className="text-l font-semibold p-2 bg-color-sky text-color-white rounded-lg hover:bg-opacity-85 duration-300"
           >
@@ -48,7 +48,7 @@ const NavBar = ({ scrollTo }) => {
           <Link href="/infrastructure/infrastructure">Use Case</Link>
           <div className="w-full text-center mt-2">
             <Link
-              href="/dapps"
+              href="http://sturanet.vercel.app/"
               target="_blank"
               className="inline-block text-l font-semibold p-2 bg-color-sky text-color-white rounded-lg hover:bg-opacity-85 duration-300"
               onClick={toggleMenu}
